@@ -128,8 +128,27 @@ function App() {
 
   const confirmReschedule = async () => {
     if (rescheduleWarning) {
-      // Simula reagendamento
-      setRescheduleWarning(null);
+      const taskId = rescheduleWarning.id;
+      setRescheduleWarning(null); // Fecha o Modal
+      
+      try {
+        const { data, error } = await supabase.functions.invoke('smart_reschedule', {
+          body: { task_id: taskId }
+        });
+        
+        if (error) {
+           console.error("Erro na inteligência: ", error);
+        } else {
+           // O evento Realtime deve assumir daqui, mas fazemos um fallback otimista rápido:
+           if (data?.task) {
+              setTasks(prev => prev.map(t => t.id === taskId ? { ...t, ...data.task } : t));
+              // Dispara um toast de sucesso pro user, pra UX ser legal
+              alert(`Agendas Fundidas! 🗓️ A inteligência moveu a atividade para: ${new Date(data.proposed_time).toLocaleString()}`);
+           }
+        }
+      } catch (err) {
+        console.error('Falha de Rede', err);
+      }
     }
   };
 
