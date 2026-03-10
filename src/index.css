@@ -1,44 +1,44 @@
 :root {
-  --bg-color: #0d1117;
-  --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.1);
+  --bg-color: #0b0f19;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   --accent-color: #58a6ff;
   --text-color: #c9d1d9;
-
+  --danger: #f85149;
+  --success: #2ea043;
+  --orange: #d29922;
+  
   --thumb-zone-min: 44px;
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
   background: var(--bg-color);
   color: var(--text-color);
-  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
   width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .glass-effect {
   background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
   border-radius: 24px;
-  padding: 2rem;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .glass-effect:hover {
@@ -46,8 +46,117 @@ body {
   box-shadow: 0 12px 48px 0 rgba(0, 0, 0, 0.5);
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* Header */
+.hero-header {
+  padding: 2rem;
+  text-align: center;
+  position: sticky;
+  top: 1rem;
+  z-index: 100;
+}
+
+h1 {
+  margin-top: 0;
+  background: linear-gradient(135deg, #58a6ff, #a371f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.health-status {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.health-status.ON_TRACK { color: var(--success); }
+.health-status.AT_RISK { color: var(--orange); }
+.health-status.CRITICAL { color: var(--danger); }
+
+/* Timer */
+.active-timer {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(88, 166, 255, 0.1);
+  border: 1px solid var(--accent-color);
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(88, 166, 255, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(88, 166, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(88, 166, 255, 0); }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+.pulse-animation h2 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+}
+
+/* Tasks Grid */
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.task-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.task-card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.task-meta {
+  color: #8b949e;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.task-meta.criticality {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+.focus-indicator {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #111;
+  color: var(--success);
+  border: 1px solid var(--success);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(46, 160, 67, 0.3);
+  z-index: 10;
+}
+
+.focus-active {
+  border-color: rgba(46, 160, 67, 0.5);
+  background: rgba(46, 160, 67, 0.05);
+}
+
+/* Buttons compliant to Thumb-Zone */
 button {
-  background: var(--glass-bg);
+  background: rgba(255, 255, 255, 0.05);
   color: var(--text-color);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
@@ -62,14 +171,35 @@ button {
   justify-content: center;
   transition: all 0.2s ease;
   backdrop-filter: blur(10px);
+  margin-top: auto;
 }
 
-button:hover {
+button:hover:not(:disabled) {
   background: rgba(255, 255, 255, 0.1);
   border-color: var(--accent-color);
   color: #fff;
 }
 
-button:active {
+button:active:not(:disabled) {
   transform: scale(0.95);
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.start-timer-btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.stop-btn {
+  background: rgba(248, 81, 73, 0.1);
+  border-color: rgba(248, 81, 73, 0.5);
+  color: var(--danger);
+}
+.stop-btn:hover {
+  background: rgba(248, 81, 73, 0.2);
+  border-color: var(--danger);
 }
