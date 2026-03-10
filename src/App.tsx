@@ -177,7 +177,7 @@ function App() {
       )}
 
       <header className="glass-effect hero-header">
-        <h1>Study-Sync</h1>
+        <h1>Web e Mobile</h1>
         <p className={`health-status ${calculateHealth().split(' ')[0]}`}>
           Status do Grupo: {calculateHealth()}
         </p>

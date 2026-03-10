@@ -24,7 +24,7 @@ describe('Study-Sync App UI & Timer Engine', () => {
   it('deve renderizar a interface base e o estado de saúde do grupo', async () => {
     render(<App />);
     
-    expect(screen.getByText('Study-Sync')).toBeDefined();
+    expect(screen.getByText('Web e Mobile')).toBeDefined();
     
     // Aguarda o fallback das tasks
     await waitFor(() => {

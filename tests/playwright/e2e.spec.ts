@@ -4,7 +4,7 @@ test.describe('Study-Sync App Ultimate E2E (Sprint 4)', () => {
   test('Renderiza a fundação Liquid Glass e barra de Saúde', async ({ page }) => {
     await page.goto('/');
 
-    const header = page.locator('h1', { hasText: 'Study-Sync' });
+    const header = page.locator('h1', { hasText: 'Web e Mobile' });
     await expect(header).toBeVisible();
 
     const healthStatus = page.locator('.health-status');

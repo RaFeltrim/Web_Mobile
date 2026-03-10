@@ -1,13 +1,15 @@
-# Study-Sync (Single-Player to Multiplayer)
+# Web e Mobile (Antigo Study-Sync)
 
-Este é o repositório oficial do projeto **Study-Sync**, desenvolvido para a disciplina de Desenvolvimento Web e Mobile (SSC0961). A arquitetura adota a metodologia *Shift-Left*, estética *Liquid Glass* e orquestra Edge Functions como microsserviços.
+Este é o repositório oficial do projeto **Web e Mobile**, desenvolvido para a disciplina de Desenvolvimento Web e Mobile (SSC0961). A arquitetura adota a metodologia *Shift-Left*, estética *Liquid Glass* e orquestra Edge Functions como microsserviços.
 
 ## 🚀 O Problema
 A procrastinação individual não apenas atrasa o aluno, mas cria buracos na infraestrutura do grupo (Multiplayer). Tarefas essenciais viram gargalos e atrasam o projeto como um todo por falta de visibilidade do esforço em andamento.
 
 ## 💡 A Solução (Epic Features)
+O Web_e_Mobile é um ecossistema de produtividade que utiliza o conceito de Single-Player to Multiplayer. Ele foca primeiro em vencer a inércia do indivíduo para, em seguida, sincronizar o esforço coletivo de forma inteligente.
+
 1. **Focus Engine Local (Pomodoro):** Uma mecânica de Timer Otimista onde pulsar a animação avisa que você está focando;
-2. **Supabase Realtime Sync:** Visibilidade total passiva, mudando o estado da Tarefa em todas os front-ends conectados via WebSockets.
+2. **Supabase Realtime Sync:** Visibilidade total passiva, mudando o estado da Tarefa em todos os front-ends conectados via WebSockets.
 3. **Smart Risk (Criticidade Dinâmica):** Algoritmia backend Edge Functions para punir adiamento e recalcular impacto a terceiros.
 4. **Smart Rescheduling:** Microsserviço de Deno operando cruzamento lógico de horários propostos para salvar os prazos.
 
@@ -30,7 +32,7 @@ O projeto adota os pilares do **Feltrim's Framework - Modo Turbo**:
 - O Supabase CLI (`npm i -g supabase`).
 
 ### 2. Subindo as Máquinas
-1. Abra um terminal na pasta root (`Study-Sync`) e instale as libs:
+1. Abra um terminal na pasta root do projeto e instale as libs:
    ```bash
    npm install
    ```
