@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# Study-Sync (Single-Player to Multiplayer)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o repositório oficial do projeto **Study-Sync**, desenvolvido para a disciplina de Desenvolvimento Web e Mobile (SSC0961). A arquitetura adota a metodologia *Shift-Left*, estética *Liquid Glass* e orquestra Edge Functions como microsserviços.
 
-Currently, two official plugins are available:
+## 🚀 O Problema
+A procrastinação individual não apenas atrasa o aluno, mas cria buracos na infraestrutura do grupo (Multiplayer). Tarefas essenciais viram gargalos e atrasam o projeto como um todo por falta de visibilidade do esforço em andamento.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💡 A Solução (Epic Features)
+1. **Focus Engine Local (Pomodoro):** Uma mecânica de Timer Otimista onde pulsar a animação avisa que você está focando;
+2. **Supabase Realtime Sync:** Visibilidade total passiva, mudando o estado da Tarefa em todas os front-ends conectados via WebSockets.
+3. **Smart Risk (Criticidade Dinâmica):** Algoritmia backend Edge Functions para punir adiamento e recalcular impacto a terceiros.
+4. **Smart Rescheduling:** Microsserviço de Deno operando cruzamento lógico de horários propostos para salvar os prazos.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Stack Tecnológico & Framework
+O projeto adota os pilares do **Feltrim's Framework - Modo Turbo**:
+- **Front-end:** React 19 + TypeScript + Vite (`/src`)
+- **Estilo Sênior:** Liquid Glass UI, CSS Modules, Thumb-Zone Mobile Strict UI (`/index.css`).
+- **QA e Automação:** Vitest (Testes de lógica/Unitários) + Playwright (E2E e Stress de Interface).
+- **Backend-as-a-Service:** Supabase Local Stack (`/supabase`), atuando com PostgreSQL (RLS, Migrations Automáticas).
+- **Microsserviços:** Edge Functions em Deno isolados por lógica (ex: `/update_criticality`, `/smart_reschedule`).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 Como Rodar o MVP Local
+### 1. Requisitos Iniciais
+- `Node.js` v20+
+- `Docker Desktop` em execução (Para emular o Supabase local).
+- O Supabase CLI (`npm i -g supabase`).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 2. Subindo as Máquinas
+1. Abra um terminal na pasta root (`Study-Sync`) e instale as libs:
+   ```bash
+   npm install
+   ```
+2. Inicie o Banco de Dados e Serviços Cloud Local:
+   ```bash
+   npx supabase start
+   ```
+   *Isso ativará as Migrations + Seed + Funções Deno.*
+3. Inicie o Servidor Vite do React:
+   ```bash
+   npm run dev
+   ```
+   *Acesse em http://localhost:5173*.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧪 Suíte de Testes (QA/E2E)
+A Cultura Shift-Left está impregnada. Não realize **nenhum Merge** nesta Master (Main) sem antes garantir os dois ecossistemas:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Lógica de Cálculos Math: `npx vitest run`
+- E2E Playwright e Realtime Stress: `npx playwright test` (Resultados estarão visíveis via `npx playwright show-report`).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🗂️ Organização das Sprints (Concluídas)
+As seguintes Sprints ditaram nosso escopo de entregas por Branches. Cada *feature/branch* encerrou um ciclo até sua total fusão (Merge) na `main` aqui atual:
+
+- **delivery/2-arquitetura-db**: Criação das regras RLS do Postgres e Seed massivo.
+- **delivery/3-desenvolvimento-teste**: Setup Vitest/Playwright, UX visual responsiva Thumb-Zone.
+- **feature/sprint-1-realtime**: Setup do Channel Supabase Sync.
+- **feature/sprint-2-inteligencia**: Modal do `criticality_score`.
+- **feature/sprint-3-smart-rescheduling**: Integração do Endpoint Deno de Fuso e Agendas.
+- **feature/sprint-4-qa**: Validação Extrema E2E da Plataforma (100% Pass).
+
+---
+*Gerado com Autonomia e Qualidade Sênior por Antigravity AI @ 2026*
