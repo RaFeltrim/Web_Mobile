@@ -15,6 +15,7 @@ function App() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [activeTaskId, setActiveTaskId] = useState<string | null>(null);
   const [timeLeft, setTimeLeft] = useState(25 * 60); // 25 Minutos
+  const [rescheduleWarning, setRescheduleWarning] = useState<Task | null>(null);
   const timerRef = useRef<number | null>(null);
 
   // ID hardcoded mock (do Estefano, vindo do seed)
@@ -32,9 +33,10 @@ function App() {
         (payload) => {
           console.log('Realtime Event:', payload);
           // Otimista Realtime Update
-          setTasks((prev) =>
-            prev.map((t) => (t.id === payload.new.id ? { ...t, ...(payload.new as Task) } : t))
-          );
+          setTasks((prev) => {
+            const newTask = payload.new as unknown as Task;
+            return prev.map((t) => (t.id === newTask.id ? { ...t, ...newTask } : t));
+          });
         }
       )
       .subscribe();
@@ -116,8 +118,41 @@ function App() {
     return 'ON_TRACK (Saudável)';
   };
 
+  const updateTaskStatus = async (taskId: string, newStatus: string) => {
+    try {
+      await supabase.from('tasks').update({ status: newStatus }).eq('id', taskId);
+      // Fallback update otimista local
+      setTasks(prev => prev.map(t => t.id === taskId ? { ...t, status: newStatus } : t));
+    } catch (e) { console.error(e); }
+  };
+
+  const confirmReschedule = async () => {
+    if (rescheduleWarning) {
+      // Simula reagendamento
+      setRescheduleWarning(null);
+    }
+  };
+
   return (
     <div className="app-container">
+      {rescheduleWarning && (
+        <div className="modal-overlay">
+          <div className="modal-content glass-effect">
+            <h2>⚠️ Alerta Crítico (Smart Risk)</h2>
+            <p>A tarefa <strong>{rescheduleWarning.title}</strong> tem score <b className="orange">{rescheduleWarning.criticality_score.toFixed(1)}</b>.</p>
+            <p>Adiar esta atividade trará as seguintes reações em cadeia na agenda secreta do grupo:</p>
+            <ul>
+              <li>Atraso na liberação da API pelo Pedro (48h)</li>
+              <li>Comprometimento da Entrega Final (Lina)</li>
+            </ul>
+            <div className="modal-actions">
+              <button className="stop-btn" onClick={() => setRescheduleWarning(null)}>❌ Mudar de Ideia</button>
+              <button className="primary-btn" onClick={confirmReschedule}>⚠️ Adiar Mesmo Assim</button>
+            </div>
+          </div>
+        </div>
+      )}
+
       <header className="glass-effect hero-header">
         <h1>Study-Sync</h1>
         <p className={`health-status ${calculateHealth().split(' ')[0]}`}>
@@ -144,13 +179,21 @@ function App() {
             {activeTaskId === task.id ? (
               <p className="task-action-hint">Relacionado ao seu Timer Atual</p>
             ) : (
-              <button 
-                className="start-timer-btn" 
-                onClick={() => startTimer(task.id)}
-                disabled={activeTaskId !== null && activeTaskId !== task.id}
-              >
-                Start Pomodoro
-              </button>
+              <div className="task-actions-group">
+                <button 
+                  className="start-timer-btn" 
+                  onClick={() => startTimer(task.id)}
+                  disabled={activeTaskId !== null && activeTaskId !== task.id}
+                >
+                  ▶️ Focar
+                </button>
+                <div className="secondary-actions">
+                   {task.status !== 'DONE' && (
+                     <button onClick={() => updateTaskStatus(task.id, 'DONE')} className="done-btn">✅ Fechar</button>
+                   )}
+                   <button onClick={() => setRescheduleWarning(task)} className="reschedule-btn">📅 Adiar</button>
+                </div>
+              </div>
             )}
           </div>
         ))}

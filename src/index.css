@@ -203,3 +203,88 @@ button:disabled {
   background: rgba(248, 81, 73, 0.2);
   border-color: var(--danger);
 }
+
+/* Sprint 2: Modal & Actions */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  max-width: 400px;
+  width: 90%;
+  padding: 2.5rem;
+  border-color: rgba(210, 153, 34, 0.4);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--orange);
+}
+
+.modal-content p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.modal-content ul {
+  padding-left: 1.2rem;
+  color: #ff7b72;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.primary-btn {
+  background: rgba(210, 153, 34, 0.1);
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.primary-btn:hover {
+  background: rgba(210, 153, 34, 0.2);
+  color: #fff;
+}
+
+.task-actions-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.secondary-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.done-btn, .reschedule-btn {
+  flex: 1;
+  font-size: 0.9rem;
+  min-height: 44px; /* Thumb Zone */
+}
+
+.done-btn {
+  color: var(--success);
+  border-color: rgba(46, 160, 67, 0.5);
+}
+
+.reschedule-btn {
+  color: var(--text-color);
+}
