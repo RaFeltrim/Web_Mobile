@@ -39,8 +39,8 @@ describe('Study-Sync App UI & Timer Engine', () => {
       expect(screen.getByText('Criar Diagrama de Classes')).toBeDefined();
     });
 
-    // Ao menos um botão de Start Pomodoro
-    const buttons = screen.getAllByRole('button', { name: /Start Pomodoro/i });
+    // Ao menos um botão de Focar
+    const buttons = screen.getAllByRole('button', { name: /Focar/i });
     expect(buttons.length).toBeGreaterThan(0);
   });
 
