@@ -1,30 +1,80 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Study-Sync App E2E', () => {
-  test('App should load and have proper Thumb Zone compliant button', async ({ page }) => {
+test.describe('Study-Sync App Ultimate E2E (Sprint 4)', () => {
+  test('Renderiza a fundação Liquid Glass e barra de Saúde', async ({ page }) => {
     await page.goto('/');
 
-    const header = page.locator('h1');
+    const header = page.locator('h1', { hasText: 'Study-Sync' });
     await expect(header).toBeVisible();
 
-    // Verify main action button is thumb-zone compliant (>= 44px)
-    const startTimerBtn = page.locator('button.start-timer-btn').first();
-    
-    // As long as we haven't implemented it, we'll try to check existence
-    // If it exists, we test dimensions
-    if (await startTimerBtn.isVisible()) {
-        const box = await startTimerBtn.boundingBox();
-        expect(box?.height).toBeGreaterThanOrEqual(44);
-        expect(box?.width).toBeGreaterThanOrEqual(44);
-    }
+    const healthStatus = page.locator('.health-status');
+    await expect(healthStatus).toBeVisible();
+    await expect(healthStatus).toContainText(/Status do Grupo:/);
   });
 
-  test('Dashboard should reflect realtime sync (Mock)', async ({ page }) => {
+  test('UX: Botões respeitam a zona do polegar (Thumb Zone, min 44px)', async ({ page }) => {
      await page.goto('/');
-     // This test ensures the realtime dashboard element exists
-     const dashboard = page.locator('.health-dashboard');
-     if (await dashboard.isVisible()) {
-        await expect(dashboard).toHaveClass(/glass-effect/); // liquid glass
+     
+     // Aguarda o fallback renderizar O botão principal da página inicial (Pomodoro)
+     const startBtn = page.getByRole('button', { name: /▶️ Focar/i }).first();
+     await startBtn.waitFor({ state: 'visible' });
+     
+     const box = await startBtn.boundingBox();
+     expect(box).not.toBeNull();
+     
+     if (box) {
+       expect(box.height).toBeGreaterThanOrEqual(44);
+       expect(box.width).toBeGreaterThanOrEqual(44);
      }
+  });
+
+  test('Modal de Impacto (Smart Risk) renderiza conteúdo agressivo e cancela via escape/fechar', async ({ page }) => {
+    await page.goto('/');
+
+    // Clicar no Adiar de uma task qualquer
+    const rescheduleBtn = page.getByRole('button', { name: /📅 Adiar/i }).first();
+    await rescheduleBtn.waitFor({ state: 'visible' });
+    await rescheduleBtn.click();
+
+    // Modal deve aparecer
+    const modalContent = page.locator('.modal-content');
+    await expect(modalContent).toBeVisible();
+    await expect(modalContent).toContainText('⚠️ Alerta Crítico (Smart Risk)');
+    
+    // Testar fechamento
+    const fecharBtn = page.getByRole('button', { name: /❌ Mudar de Ideia/i });
+    await fecharBtn.click();
+    
+    await expect(modalContent).toBeHidden();
+  });
+
+  test('Mecânica do Pomodoro: Start Engine e UI Feedback Otimista (Pulse Blur)', async ({ page }) => {
+    await page.goto('/');
+
+    const startBtn = page.getByRole('button', { name: /▶️ Focar/i }).first();
+    await startBtn.waitFor({ state: 'visible' });
+    
+    // Salvar o Card Relacionado para ver se reflete que está ao vivo
+    const card = page.locator('.task-card').first();
+    
+    await startBtn.click();
+
+    // UI Feedback Imediato
+    const activeTimer = page.locator('.active-timer.pulse-animation');
+    await expect(activeTimer).toBeVisible();
+    
+    // Tag visual de Ao Vivo na Task
+    await expect(card.locator('.focus-indicator')).toHaveText('🟢 Ao Vivo Focando');
+
+    // Botão muda
+    const startBtnDisabled = page.getByRole('button', { name: /▶️ Focar/i }).first();
+    await expect(startBtnDisabled).toBeDisabled();
+
+    // Parar Focus
+    const stopButton = page.getByRole('button', { name: /Pausar\/Finalizar/i });
+    await stopButton.click();
+
+    await expect(activeTimer).toBeHidden();
+    await expect(card.locator('.focus-indicator')).toBeHidden();
   });
 });

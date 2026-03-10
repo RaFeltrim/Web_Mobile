@@ -66,6 +66,8 @@ function App() {
   // 2. Timer Pomodoro Engine
   const startTimer = async (taskId: string) => {
     setActiveTaskId(taskId);
+    setTasks(prev => prev.map(t => t.id === taskId ? { ...t, is_active_focus: true } : t));
+
     if (!timerRef.current) {
       timerRef.current = window.setInterval(() => {
         setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
@@ -90,6 +92,8 @@ function App() {
     }
     
     if (activeTaskId) {
+      setTasks(prev => prev.map(t => t.id === activeTaskId ? { ...t, is_active_focus: false } : t));
+
       try {
         // Realtime Broadcast: Encerrei o foco.
         await supabase
