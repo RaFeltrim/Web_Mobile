@@ -1,71 +1,90 @@
-# Web e Mobile (Antigo Study-Sync)
+# Web e Mobile (antigo Study-Sync)
 
-Este é o repositório oficial do projeto **Web e Mobile**, desenvolvido para a disciplina de Desenvolvimento Web e Mobile (SSC0961). A arquitetura adota a metodologia *Shift-Left*, estética *Liquid Glass* e orquestra Edge Functions como microsserviços.
+Repositório do projeto **Web e Mobile**, desenvolvido para a disciplina
+**SSC0961 — Desenvolvimento Web e Mobile (USP)**. A arquitetura adota a
+metodologia **Shift-Left**, estética **Liquid Glass** e orquestra
+**Edge Functions** como microsserviços.
 
-## 🚀 O Problema
-A procrastinação individual não apenas atrasa o aluno, mas cria buracos na infraestrutura do grupo (Multiplayer). Tarefas essenciais viram gargalos e atrasam o projeto como um todo por falta de visibilidade do esforço em andamento.
+## O problema
 
-## 💡 A Solução (Epic Features)
-O Web_e_Mobile é um ecossistema de produtividade que utiliza o conceito de Single-Player to Multiplayer. Ele foca primeiro em vencer a inércia do indivíduo para, em seguida, sincronizar o esforço coletivo de forma inteligente.
+A procrastinação individual não apenas atrasa o aluno: cria gargalos na
+infraestrutura do grupo (efeito *Multiplayer*). Tarefas essenciais viram
+pontos de bloqueio e atrasam o projeto como um todo por falta de
+visibilidade do esforço em andamento.
 
-1. **Focus Engine Local (Pomodoro):** Uma mecânica de Timer Otimista onde pulsar a animação avisa que você está focando;
-2. **Supabase Realtime Sync:** Visibilidade total passiva, mudando o estado da Tarefa em todos os front-ends conectados via WebSockets.
-3. **Smart Risk (Criticidade Dinâmica):** Algoritmia backend Edge Functions para punir adiamento e recalcular impacto a terceiros.
-4. **Smart Rescheduling:** Microsserviço de Deno operando cruzamento lógico de horários propostos para salvar os prazos.
+## A solução (epic features)
 
----
+Ecossistema de produtividade que aplica o conceito *Single-Player → Multiplayer*.
+Foca primeiro em vencer a inércia do indivíduo e em seguida sincronizar o
+esforço coletivo.
 
-## 🛠️ Stack Tecnológico & Framework
-O projeto adota os pilares do **Feltrim's Framework - Modo Turbo**:
-- **Front-end:** React 19 + TypeScript + Vite (`/src`)
-- **Estilo Sênior:** Liquid Glass UI, CSS Modules, Thumb-Zone Mobile Strict UI (`/index.css`).
-- **QA e Automação:** Vitest (Testes de lógica/Unitários) + Playwright (E2E e Stress de Interface).
-- **Backend-as-a-Service:** Supabase Local Stack (`/supabase`), atuando com PostgreSQL (RLS, Migrations Automáticas).
-- **Microsserviços:** Edge Functions em Deno isolados por lógica (ex: `/update_criticality`, `/smart_reschedule`).
+1. **Focus Engine local (Pomodoro):** timer otimista com animação pulsante,
+   sinalizando que o usuário está em foco.
+2. **Supabase Realtime Sync:** visibilidade passiva — o estado da tarefa
+   muda em todos os front-ends conectados via WebSockets.
+3. **Smart Risk (criticidade dinâmica):** Edge Function que pune adiamento e
+   recalcula impacto a terceiros.
+4. **Smart Rescheduling:** microsserviço Deno que faz cruzamento lógico de
+   horários propostos para salvar prazos.
 
----
+## Stack e framework
 
-## 📦 Como Rodar o MVP Local
-### 1. Requisitos Iniciais
-- `Node.js` v20+
-- `Docker Desktop` em execução (Para emular o Supabase local).
-- O Supabase CLI (`npm i -g supabase`).
+- **Front-end:** React 19 + TypeScript + Vite (`/src`).
+- **UI:** Liquid Glass, CSS Modules, Thumb-Zone Mobile Strict UI (`/index.css`).
+- **QA e automação:** Vitest (unidade) + Playwright (E2E e stress de UI).
+- **Backend-as-a-Service:** Supabase Local Stack (`/supabase`) com PostgreSQL,
+  RLS e migrations automáticas.
+- **Microsserviços:** Edge Functions em Deno, isoladas por lógica
+  (`/update_criticality`, `/smart_reschedule`).
 
-### 2. Subindo as Máquinas
-1. Abra um terminal na pasta root do projeto e instale as libs:
+## Como rodar o MVP local
+
+### Requisitos
+
+- Node.js 20+
+- Docker Desktop em execução (para o Supabase local).
+- Supabase CLI: `npm i -g supabase`.
+
+### Subindo o ambiente
+
+1. Instale dependências:
    ```bash
    npm install
    ```
-2. Inicie o Banco de Dados e Serviços Cloud Local:
+2. Suba banco de dados e serviços locais:
    ```bash
    npx supabase start
    ```
-   *Isso ativará as Migrations + Seed + Funções Deno.*
-3. Inicie o Servidor Vite do React:
+   Aplica migrations, seed e funções Deno.
+3. Inicie o servidor Vite:
    ```bash
    npm run dev
    ```
-   *Acesse em http://localhost:5173*.
+   Acesse em `http://localhost:5173`.
 
----
+## Suíte de testes (QA / E2E)
 
-## 🧪 Suíte de Testes (QA/E2E)
-A Cultura Shift-Left está impregnada. Não realize **nenhum Merge** nesta Master (Main) sem antes garantir os dois ecossistemas:
+Cultura Shift-Left aplicada. Nenhum merge na `main` sem garantir os dois
+ecossistemas:
 
-- Lógica de Cálculos Math: `npx vitest run`
-- E2E Playwright e Realtime Stress: `npx playwright test` (Resultados estarão visíveis via `npx playwright show-report`).
+- Lógica de cálculos: `npx vitest run`.
+- E2E Playwright + stress realtime: `npx playwright test`
+  (relatório via `npx playwright show-report`).
 
----
+## Organização das sprints (concluídas)
 
-## 🗂️ Organização das Sprints (Concluídas)
-As seguintes Sprints ditaram nosso escopo de entregas por Branches. Cada *feature/branch* encerrou um ciclo até sua total fusão (Merge) na `main` aqui atual:
+Cada *feature/branch* fechou um ciclo até ser mergeada na `main`.
 
-- **delivery/2-arquitetura-db**: Criação das regras RLS do Postgres e Seed massivo.
-- **delivery/3-desenvolvimento-teste**: Setup Vitest/Playwright, UX visual responsiva Thumb-Zone.
-- **feature/sprint-1-realtime**: Setup do Channel Supabase Sync.
-- **feature/sprint-2-inteligencia**: Modal do `criticality_score`.
-- **feature/sprint-3-smart-rescheduling**: Integração do Endpoint Deno de Fuso e Agendas.
-- **feature/sprint-4-qa**: Validação Extrema E2E da Plataforma (100% Pass).
+- `delivery/2-arquitetura-db` — regras RLS do Postgres e seed.
+- `delivery/3-desenvolvimento-teste` — setup Vitest/Playwright e UX responsiva Thumb-Zone.
+- `feature/sprint-1-realtime` — canais Supabase Sync.
+- `feature/sprint-2-inteligencia` — modal `criticality_score`.
+- `feature/sprint-3-smart-rescheduling` — endpoint Deno de fuso e agendas.
+- `feature/sprint-4-qa` — validação E2E da plataforma.
 
----
-*Gerado com Autonomia e Qualidade Sênior por Antigravity AI @ 2026*
+## Contexto acadêmico
+
+Trabalho desenvolvido na disciplina SSC0961 (USP) por Rafael Feltrim,
+sob orientação da equipe docente do curso. Versões posteriores e
+materiais públicos relacionados estão em
+`https://rafeltrim.github.io/portfolio`.
