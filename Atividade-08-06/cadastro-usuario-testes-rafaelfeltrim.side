@@ -1,0 +1,3188 @@
+{
+  "id": "4b952ad1-b3c2-5fe4-9395-30325a9692b9",
+  "version": "2.0",
+  "name": "cadastro-usuario-testes-rafaelfeltrim",
+  "url": "https://linamgr.github.io/cadastro-usuario/",
+  "tests": [
+    {
+      "id": "57416f05-d584-5c7b-88bf-0c71ba67f438",
+      "name": "cadastro-usuario-ct1-1",
+      "commands": [
+        {
+          "id": "d6f87245-09c4-506e-b984-b7bd5478c4fc",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3e8c2c4d-5531-5fb1-be64-4d869af58c24",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "bc112b6e-1ea2-51ed-bab6-f9aa3243dddd",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "9676b08f-b021-55b3-884c-643b3c3a97b8",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "e3e75c0e-9c1e-55b7-af54-702d0a1df504",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "67bf9f01-1245-575f-9379-987049a20e00",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%No74"
+        },
+        {
+          "id": "a81ece9b-85e9-53aa-932e-185e127f2030",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6389e05d-afcc-5ea7-8401-433ed369f209",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha Moderada"
+        },
+        {
+          "id": "1ac05d42-b9c1-532b-9290-1abb206bb981",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "12122be6-2676-566f-bc54-05ef01d42a6c",
+      "name": "cadastro-usuario-ct1-2",
+      "commands": [
+        {
+          "id": "bcb50492-9ef2-5d8b-a72d-eb41ad828c63",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5ee97ab3-9d54-5c66-b69a-c84e96b62400",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "9fc14bdf-e854-57b7-b27e-9b331798aba5",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Maria Aparecida Lucinda Ferreiras"
+        },
+        {
+          "id": "d984a64b-ae4b-555e-9b6b-aeb4c30c35b3",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "dbbd41b5-7e4e-5a4a-9cd2-5b89ee6706ca",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "malf@usp.br"
+        },
+        {
+          "id": "6429b5a3-6340-5cd0-9b8c-dc8f902b2591",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%No74"
+        },
+        {
+          "id": "91b8de54-b84e-5f35-b4f3-d35229f704f6",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "03106345-b158-5778-8855-d237fa32cbb0",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha Moderada"
+        },
+        {
+          "id": "04bcc8a9-8a34-589b-8278-f034fde86648",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "a0c1fce6-6182-5f61-a435-5f6217a7d125",
+      "name": "cadastro-usuario-ct2-1",
+      "commands": [
+        {
+          "id": "29da034c-e480-5ff6-bff1-27c7401d62e2",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "dffc0813-443c-51fb-beca-de9ef1dee68e",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "8b6b15a9-047f-59a3-a8f2-b0b3ae45b504",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "664d88db-e7b4-5c8f-a230-200b168e92ec",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "c542a807-9931-51ad-a5c2-a383b8ea2cbf",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "maria@usp.br"
+        },
+        {
+          "id": "7f2884e0-a22f-5098-bfcb-fd4dbf14fa6e",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%No74"
+        },
+        {
+          "id": "634e94bf-7b8e-5507-ba22-c47f4a07548f",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2860f284-4636-580b-9f8b-c65283ccd17e",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "9e7c55c0-e841-5dab-a708-97a4631526ea",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha Moderada"
+        },
+        {
+          "id": "f04cc5ce-a3b9-5eec-b545-caaf8b55bc0a",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "c5061bc8-a7ff-5355-b795-e7a64b745b57",
+      "name": "cadastro-usuario-ct2-2",
+      "commands": [
+        {
+          "id": "9dd5c774-cca6-5534-a00c-6cf9451012af",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a4a97ffe-780e-5e28-ab64-c5183de76d28",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "5ce0ee25-c43e-5e5c-959b-deb3aa7f7b71",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "MariaAparecidaLucindadeFerreira"
+        },
+        {
+          "id": "2e326332-35ef-578a-9d90-c60db7e01a8e",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "b072ecf2-d8d1-57fb-8052-1f28a15b6de3",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "maria@usp.br"
+        },
+        {
+          "id": "45db8bed-ff1d-545e-a82d-393887f075ee",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%No74"
+        },
+        {
+          "id": "70b7226e-dfaf-5a3f-b492-5a806b4930b7",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c1215d84-27be-57ed-86cd-1e618c91a33b",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "7e4ed26d-1d80-5180-a032-21220f6068ee",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha Moderada"
+        },
+        {
+          "id": "bd9479b1-3768-5ddb-8118-9806e8ed66fc",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "eabf4854-a8c5-516d-be9f-da6759fba7d9",
+      "name": "cadastro-usuario-ct2-3",
+      "commands": [
+        {
+          "id": "b09d1879-acf2-53d3-b118-a920743f11c8",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00b5acda-7d2c-56fc-9e23-efb0e7924772",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "7b36e8f4-e588-5c4a-9c05-4926c1596d75",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "   "
+        },
+        {
+          "id": "445deaeb-6140-53e4-95ff-333b2a85ed72",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "0284a779-b2e8-5292-b9aa-bdeffc80dc0e",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "maria@usp.br"
+        },
+        {
+          "id": "d1789eb0-6115-5a35-83c3-b73f8c9bd470",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%No74"
+        },
+        {
+          "id": "6ee804c8-2419-5699-8cd6-606363e6bc95",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "def096f5-39d7-52ab-8576-12faddaf5d71",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "3c5ca473-1856-5855-9631-dc4c46c94981",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha Moderada"
+        },
+        {
+          "id": "875addb4-8b31-5980-a743-09a121320c06",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "0b0b4682-68b8-5d39-a1f9-50113dab9210",
+      "name": "cadastro-usuario-ct3-1",
+      "commands": [
+        {
+          "id": "db0c1e4a-1501-58c1-9361-8f430f970c6a",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c50fad15-4855-5e3e-b7d3-3b669f3b7db2",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "c4bcde2f-8ac1-5fd4-b8c4-fc783f99cd40",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "05d0bf11-74c8-5f5c-9dae-fb7fb2ad7d53",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "3808a865-1577-55ed-81a1-1a15323b41de",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "9ede976b-aa61-5121-b63c-be3b5cb3017a",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%No74"
+        },
+        {
+          "id": "b0b4a38d-362d-5985-8ccc-19808aa8306c",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a8b51d74-f773-5f28-8af8-d5a97c45c7c5",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "2e8de890-ea66-5287-b07d-95e836587435",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha Moderada"
+        },
+        {
+          "id": "6a673eec-ae41-5366-b5d4-edca662b0060",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "4da69350-176a-5330-8378-aab2bb000e18",
+      "name": "cadastro-usuario-ct4-1",
+      "commands": [
+        {
+          "id": "1e122fe9-a3f4-56f1-8a2a-c42ef7487ffc",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8fd3f45a-5ede-52a7-ae2d-b22b211ed213",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "f673d3bf-fc28-5b4e-bd40-70375382c30f",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "302b6229-169a-549b-ae28-5f1ce7985dd5",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "037757d8-f917-5482-b0bd-1db82d46916a",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "83526cb7-aaa4-5ee8-b410-633472f67770",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%No74"
+        },
+        {
+          "id": "a03ab734-41cd-5027-b490-12cc64cfa7bf",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "232f9fd1-8fa8-5490-b40c-21f419d87af0",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "6f6ae40a-28c0-5e57-b76a-817e0f8fd641",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha Moderada"
+        },
+        {
+          "id": "bb53700f-561d-5150-89c0-da34b4dc0066",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "3e879294-27b4-599a-be07-aed37b4af7ef",
+      "name": "cadastro-usuario-ct5-1",
+      "commands": [
+        {
+          "id": "54da8c06-ee4b-5e16-b188-d769d7bbe32c",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "69593f7f-eead-5305-b1b2-f30fab1394ef",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "f524a8fb-046c-5208-8078-7905a170b75c",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "cef5e23a-bdec-5499-9ae5-c34a9df717a1",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "f0551bf7-1b7f-50fe-bd9b-a0e63e454130",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "dd6af0c0-cd57-5773-9dfe-7789785de814",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "12345"
+        },
+        {
+          "id": "9d32a3f6-7906-50f3-b6cd-623b59e79162",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "27f5b63a-47fd-500d-92e1-a5ae8f94b108",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "45fa7f0f-9217-5954-9e58-78a34c333e92",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "006c0d30-a2ff-5d0e-8ef3-dda5085b9be9",
+      "name": "cadastro-usuario-ct6-1",
+      "commands": [
+        {
+          "id": "08e8b22f-87c8-5f18-890e-85f43128083c",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d3dd2acd-2d8d-5cbb-b067-077db5be5216",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "b22e2a87-bc87-5d5a-a16f-817c9b36856d",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "b9adaab4-e67c-5dff-9888-1789ef65e223",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "d0f0562c-40e2-57fa-b9c9-1aee53f7aab8",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "574fbbd8-9fd8-54e9-828a-bbc73c90d5e3",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%Julian74"
+        },
+        {
+          "id": "c7065e8e-21d0-5d9f-9ab0-2d3869b230ed",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6176f585-36a5-580a-9113-ba434090b5f0",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "645fa960-f164-5e45-8f53-b440165c5737",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "4c0fce1d-6924-58f1-a6d7-ec4c1271d6d0",
+      "name": "cadastro-usuario-ct7-1",
+      "commands": [
+        {
+          "id": "e513a348-d775-5af4-a741-be0ed0a90ac2",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "40d67ed9-0605-53a7-8a5f-aff401ff854e",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "dcd4ee73-a264-507f-9ada-d89bc74b0d39",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "554cb417-2e93-5290-9668-3a4974e1298c",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "125bbfc9-cd85-533a-90ad-eee236b22386",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "fdc66d37-b031-5c14-8bdd-293fb91f66d2",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "83bb96e7-d889-50ca-82ea-20bdaebfcae4",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2e566aa5-e17a-55eb-ab59-9f11e43c0a89",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "74e3a716-c000-5b68-94e1-1590fdeb5928",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "3d4f0b82-80f5-56ee-8f57-5399902ce08e",
+      "name": "cadastro-usuario-ct8-1",
+      "commands": [
+        {
+          "id": "92e42597-0ef7-54d9-91a8-edb862e0bda9",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d14c0440-54f9-5c64-8dc4-2f65a09a605e",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "842a6b51-26b8-5c20-a89f-fb8cbf43bcf6",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "54f1b143-785f-555d-96c6-9a276b51da29",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "7cd2742b-79e5-5f68-995d-b3ef01becbdd",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "8e694595-0fac-5b94-9fba-188d205c813b",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%Julian74"
+        },
+        {
+          "id": "3ae90624-3342-506c-9cb0-e47639b9572d",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "585504f7-b1f7-5ae0-be00-a115cb02707e",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "d3d2e0d5-d47b-5c94-93a7-074fb113d8e9",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "85cfede3-beb4-5fb0-9707-0911933745b4",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "8e31c419-9afe-5742-88e9-91f49baed6bd",
+      "name": "cadastro-usuario-ct9-1",
+      "commands": [
+        {
+          "id": "ebe81301-4d54-5bfe-8d5e-2825a5d40112",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "44f84745-b042-54aa-9abd-5b31b5abc152",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "ba6dd35f-1041-58cd-8156-58dbfb0f81bd",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "1f1040ea-6c15-5dad-980d-f1f71ac20180",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "e943d73f-5f5b-5067-8d80-7831145b56a5",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "ea09878a-0a53-5442-bb94-eff0a7c979ca",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "12345"
+        },
+        {
+          "id": "7357069f-bc08-5b43-a807-340ac604025a",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d77d6c2f-02b6-525a-88f7-304bf398182f",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "0d8f3804-8e68-5f11-b7da-51a890bfe2ab",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "4870a28d-97da-5313-8480-05d1f01f8b07",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "48defad3-0439-551f-80fe-1c2e594829ef",
+      "name": "cadastro-usuario-ct10-1",
+      "commands": [
+        {
+          "id": "48d5d395-5cef-54a1-9433-c9a8eaba5062",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0daf9b9b-4183-5407-a755-313b14e4b416",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "e93434e4-9a16-54bb-ae95-ea1ccb393d0e",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "466e2a2b-ff95-5c8c-a2ed-1be3cf817f46",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "9cf5782f-3055-56f5-87ff-6c6c06c102e0",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "193c06e0-19ba-54dc-a227-13c3f26fc9a1",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%Julian74"
+        },
+        {
+          "id": "81d68ba2-7cb5-54b6-9401-69fb49edbc14",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6166f374-8511-5381-a00f-802214fbede5",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "86f8a3da-559b-5be6-8ad3-acededc2a162",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "083ed493-36d8-52ee-81d3-268076f9b220",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "ad836c6b-82bb-5797-8389-304249be8242",
+      "name": "cadastro-usuario-ct11-1",
+      "commands": [
+        {
+          "id": "abe52a1a-1dfa-5f25-9584-120f916c2c1c",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "dfe1c430-614b-52ba-bb60-3eabd7cd79b4",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "4c9b92aa-466a-507c-b97e-204316e09802",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "ea24ce16-9517-5c32-b8f3-e264455653bf",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "ed3c70f9-2c1b-512c-a80a-577a2632bff6",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "35a7658d-005f-550b-a364-6a6a83e15265",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "12345"
+        },
+        {
+          "id": "76c74532-8a8e-5ef8-a888-34c1ebf2d0e8",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cd2a9029-35a7-58f9-b317-636df96bb392",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "08afd3ab-0f40-5255-8ca0-cdeb789741fb",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "08a82edf-c1e1-570c-8592-26590a761a34",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "634c41e6-db6b-5991-9782-88f6e93a384d",
+      "name": "cadastro-usuario-ct12-1",
+      "commands": [
+        {
+          "id": "aa9dd915-c4ac-5ce6-90de-ed83814f4f87",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2b7719fb-a2ca-53bd-9f6b-546d1c931bf9",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "eb8151af-0d86-556e-95f8-9de586dbe35d",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "670741ed-fc5c-5985-a651-e2556da6d1f5",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "0743c4de-48d0-5e89-9242-f99c9e083897",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "526dd8b2-8ca4-50d2-88b8-b7479e946c2d",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%No74"
+        },
+        {
+          "id": "13ee015d-28b8-5168-9013-e468d74e92c5",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "627bb9f7-298a-5e95-a75f-b00dfcd1b90c",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "55c203da-84c2-5e5d-ba61-1f64c3fbd173",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "0139bd9a-0c05-54e7-ad24-5e224283d150",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha Moderada"
+        },
+        {
+          "id": "0068df9a-041f-5fbe-9ebc-cf9dedd22a67",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "ff7ecdd5-0ddf-58fe-9e9c-2565b38d57cd",
+      "name": "cadastro-usuario-ct13-1",
+      "commands": [
+        {
+          "id": "dc971e15-e498-5eb3-a9c1-c2af3b4df788",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "85a78cbd-ad98-5222-99a8-e18a83dcacff",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "f9b04d4c-2dcd-5e00-98be-192044044924",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "33192ee6-21ff-5e95-9f53-82464f73d2a7",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "e1eb60c7-5ee6-5d7d-a93b-bca38d2ab886",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "a68692be-200b-54f3-a6f7-224d3bad7661",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%M@r1a74"
+        },
+        {
+          "id": "8d90188b-9e90-586a-9c67-614e6280b4ba",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0332ae9d-9ce6-5e63-bbe5-4b9e2210fd42",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "348d6dda-88f8-5cb0-8232-4ee724a31054",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "8d210f2b-0a8c-5766-bd4b-e2d1a78e13b9",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "bda69163-5b36-5052-9a40-ae08c4fcad58",
+      "name": "cadastro-usuario-ct14-1",
+      "commands": [
+        {
+          "id": "51e9615e-bd4d-516b-9ff2-e924a3b0bd75",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c85ae257-4b7b-51d8-8c6f-e04528a6eccb",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "379c2c18-e715-55f9-8264-b309820a9500",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "63c92525-18c4-51b6-a79b-332bf21d8946",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "ea47de0f-a9b3-5537-a62f-07a426b9b75c",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "61d29d02-d465-5c6f-b4a3-893d5bee528d",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "12345"
+        },
+        {
+          "id": "7ab0e9ce-247e-5233-993b-474b37b754a8",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9037528d-a49b-5984-a1b5-d9dad5a030c2",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "a518f138-51d5-5737-ae52-49461b9a90f4",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "e2431f54-b400-5009-9c04-57c445d653df",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "d7b5b03a-620a-5f0a-9270-284b5bf3842a",
+      "name": "cadastro-usuario-ct15-1",
+      "commands": [
+        {
+          "id": "93948f87-90b6-574e-82fc-ba43ac370dbe",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6c20e0d3-aa1b-5c3d-8718-00df4cd3f37f",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "c4637700-60ae-523f-9104-71fb52bcbce7",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "066703ce-7fb1-50c9-9ea4-84a3f7091ae0",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "da4f3e68-2802-5bbf-8639-ee159ce48911",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "3b348ded-4da6-5565-8c2a-8918f28e1dda",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%No74"
+        },
+        {
+          "id": "9c833a51-2e8c-5d68-80d3-ac979cfceddd",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ce03c965-ab70-506c-8cbb-f0900a37c908",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "619c72cf-78d8-53cd-b753-eca574bbb0a7",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "5ab1161f-bed9-572c-be6d-e2d159889c70",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha Moderada"
+        },
+        {
+          "id": "ebb9e2b6-cca0-584d-9d4c-7231f8f9d284",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "3b1342ee-a926-5918-87f2-5ddaa2917adc",
+      "name": "cadastro-usuario-ct16-1",
+      "commands": [
+        {
+          "id": "fab6a231-3dad-59fe-97c1-495e286a5482",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a5632a9d-2e65-5f98-a999-ccdd4894b6ac",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "131d52e6-2193-5d58-b5b4-9a1ecc0051fd",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "2561198d-3346-50ab-bb74-ba7f9074f87f",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "4721a744-eb9e-5dc0-b913-871c40729c4c",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "47c64e7f-9297-55f2-be7b-7c0a1537a492",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%No74"
+        },
+        {
+          "id": "e39b2cd4-d438-58b6-8e12-910af2ab6509",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ebc1525c-3043-586e-b914-7415b40352cb",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "e6a44112-addc-559e-a339-b1f553336091",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "e1fcdeca-4643-573c-96d6-dfdbf6582a2a",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha Moderada"
+        },
+        {
+          "id": "bb543ea7-9b96-5fae-aa4d-f7eb13f46117",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "ce361b7d-8e44-5148-b751-9dd857d1e5f9",
+      "name": "cadastro-usuario-ct17-1",
+      "commands": [
+        {
+          "id": "6ef129d9-4c7c-55f7-b830-37b4c0a64c21",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "533ff6dd-1ded-51f7-ba68-fc3c74909780",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "97118e17-bb2d-540f-9726-52be15c61d0b",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "b9c347af-f52f-5ca6-a64f-ea3329f45e97",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "caad5a39-3a46-5094-bc25-ec1b444ee2b3",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "16db706c-4b03-5b6b-969e-7ef478a80de4",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "16d45d0f-4d1e-5d0c-b04a-c01bb7e9197c",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "05bcb279-918d-5ab0-8aae-3a99e37f7647",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "dab0e7af-925c-5ccc-9986-3ced1452378f",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "35ab7fd3-2824-5751-8688-043cb55871a8",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "d027b4d9-51e3-5101-a152-bb56a5046146",
+      "name": "cadastro-usuario-ct18-1",
+      "commands": [
+        {
+          "id": "6506236e-e83a-5838-9177-441f384357de",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2ba3eaef-e36d-5f96-9bae-2dea5ac8772c",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "2766ebe8-da3a-511e-a7e5-6714556cedb5",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "193b3e99-6953-5915-9120-4157c9e251f6",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "5a1a6523-5395-59b5-ad87-d03488ef9a12",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "e1e97d8c-a997-50ef-a9e1-e9164e9f09a4",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "1131ce08-bb71-5c1c-8550-5f21907e92e9",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "45df4fb4-b371-5296-8b56-2ab4bcbe9617",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "fac54203-c399-57f8-9411-7bb5b4d32a64",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "3bd56b1b-fa08-5ecd-8d47-5e51ccb45d0a",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "29a2483a-cc7c-529e-93f3-5a800c99a809",
+      "name": "cadastro-usuario-ct19-1",
+      "commands": [
+        {
+          "id": "710a0949-c43d-5471-95d3-22c0f92ff577",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7dcdd8c5-7de1-5061-9a77-4457bc8fbe0c",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "ba708953-7093-5cf7-ab30-eda3d59c6ef0",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "271059f2-6e94-5ce1-953f-873124d9948f",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "67e0c7f4-17bd-5e59-ab98-8a8107c0f84b",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "22ae5687-f0f3-5aca-ba25-a371ab09ab5e",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%Julian74"
+        },
+        {
+          "id": "0b58ba6f-9176-5099-969c-708ddaf53bc3",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b7743b64-fb0b-54d3-b7ea-8495737558c4",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "cba146e9-fd53-53f9-854a-138ebd84aa38",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "d07b575f-ce9b-5a68-959f-53dc85147608",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "bede71ad-5bf4-5b5a-be9d-74fd0847fc1f",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "94ff2d12-ef76-5404-bb8a-ae4f1e60c02a",
+      "name": "cadastro-usuario-ct20-1",
+      "commands": [
+        {
+          "id": "0ba5acb2-5013-5d31-a72b-0bd3f870e671",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "55eb6eb9-1ffa-542a-937d-ddfbc3aad0cd",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "0c3dd95d-8a0a-553b-b9e9-b36ec1aaa559",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "1182cc86-6452-5433-99b4-8476f4668957",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "0aeeba61-6bd3-5bb5-8550-cc0e74c5faf7",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "e42909e8-9a4c-53e1-9c50-3f3d7c56988e",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "12345"
+        },
+        {
+          "id": "db3452da-5110-5548-ae2c-ca44c91711c4",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "49f9e326-c9b8-569c-a8c8-07ef4ca3e8b8",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "6a1663d4-2ff5-5325-8da0-8420252c4902",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "e51f46ec-0b60-531e-9127-f699c33f490f",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "1d216db2-a101-57ea-ad49-d0061a19e706",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "79f69bab-b566-5e63-b2d9-4d5725d360d8",
+      "name": "cadastro-usuario-ct21-1",
+      "commands": [
+        {
+          "id": "41b050c4-af26-5949-903a-8ddace0e6420",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6c6f9218-9550-59f7-9c87-ff37896ed9f5",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "ffcbdcdc-ae6a-5ecf-8d9f-1d2c1011a134",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "6f9911ce-fd41-513e-9b91-2fb9018ada8d",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "f7b3cc4c-9a1b-5c16-a429-a740775644ce",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "dd453e4e-195c-5cc7-9a33-d32048112ae6",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "6f1be3c7-dbbf-52df-bb61-bb090dc9330d",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5d42f679-e298-5216-ab20-be0ed9e4cc47",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "f6236ffe-04e9-5fc6-af64-3d72f27c65e1",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "05361c7d-a70d-5d82-8613-2b7a7f687116",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "ac819f94-608a-55b8-969b-2fc8b2bd00fa",
+      "name": "cadastro-usuario-ct22-1",
+      "commands": [
+        {
+          "id": "abe7fc57-0712-5cc8-850b-ac81e64eb81c",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1a7bb682-e311-567f-81d8-643d1d1c05b7",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "581f981a-3862-539f-b725-1d679b7b5962",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "edb6ebe9-1300-5f44-922d-4019c88a4f96",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "78584729-59d5-5f3f-a8ea-68ec13bbc919",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "f8e765d3-e700-54a8-94a0-1151005b2153",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%M@r1a74"
+        },
+        {
+          "id": "bd62fb8c-3e9e-5ef5-be47-ad692d51914b",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f5a5457f-854f-5adc-89e6-77104f20c0fe",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "1e8c056d-6e79-507f-8130-3b529c4dfe77",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "ab4805e1-1f93-52ed-ba25-571329cf6789",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "6a65a14f-d00d-5887-b2d7-3cc6b65d278e",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "c9e9218a-d1c7-5125-9117-ff397651b783",
+      "name": "cadastro-usuario-ct23-1",
+      "commands": [
+        {
+          "id": "fae58496-0fd2-56a3-9e4b-084224dc016a",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "874b69c5-d7ef-574b-9353-ae2bdbd8e242",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "7855f22a-ded7-5fcb-b010-f43e997bfe20",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "055655aa-a361-5088-9d34-deae93b4c4d0",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "130b011e-af1e-587c-95aa-31f3d1d0f18e",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "ebee1a54-1671-5e57-bc12-39825820270c",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "12345"
+        },
+        {
+          "id": "bbb5bc80-f7d1-5590-a9e9-46245252ae04",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "70635a4e-70b8-5e0f-a325-98082a37d628",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "7f316729-bbc5-5a30-a3f3-80565b9d6024",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "b6ae62ea-6189-5b73-8dad-e3af0ba33c2b",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "264b7a98-0bc4-5bcc-b881-df2fd1cb6ad9",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "1bea86a8-5909-5b1c-9e63-22f9cd8ac00d",
+      "name": "cadastro-usuario-ct24-1",
+      "commands": [
+        {
+          "id": "3f97a746-f1bd-50ae-a146-ad4b79c535fd",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4958b336-0a2c-5700-b891-bb83f49fba0e",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "2e738f59-a8c7-553e-bab2-7727fb2936cf",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "f7eeeeb6-8f7b-568d-a820-4d30463819eb",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "033ba0c0-4fab-5dc0-9de5-b375af576926",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "27261c69-2a80-5bc6-a032-e59ce51a0109",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%M@r1a74"
+        },
+        {
+          "id": "21d9b2f9-c16e-5e41-81e9-bb03b18519de",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "04f285ba-3849-51c5-b881-08726698d91b",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "f5347bc8-480c-55e8-adba-bbb8f51188c8",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "e4989731-b728-57a8-9b39-ed351fb14c4f",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "5233a9db-4eba-5156-9f68-bf5ba83cd5d7",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "e921e047-1c80-5597-b107-59e6b41ede45",
+      "name": "cadastro-usuario-ct25-1",
+      "commands": [
+        {
+          "id": "04b2ab42-707d-55e5-93d5-43be8c535a85",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0fa554ec-4ac5-5002-8500-8beae9cb64c5",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "54d4c715-e690-5af4-ab74-b73d1139a72f",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "15a3d05c-1a00-500b-9df8-189cf007c9eb",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "d415505d-9ba1-57fc-8f35-97169bc34fda",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "9fc420ae-ea27-5a06-ad82-e2cc4d7aa7c8",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "12345"
+        },
+        {
+          "id": "5e1014ab-b4e9-5a3c-b7d4-b2b57eb53994",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "98061860-ccdf-556a-9f44-13b2b31ede73",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "5a32bd22-4447-501d-8b7a-a499a13cbe9d",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "e269fa7f-3397-54df-a4c7-18e8dee78232",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "a58977f7-64b0-5f0f-a879-5bf28f924e37",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "bfbcd046-fbe9-58a1-bfba-7980b06cf8e5",
+      "name": "cadastro-usuario-ct26-1",
+      "commands": [
+        {
+          "id": "437c9b37-94a2-58d7-8b7a-45d5ee599ef1",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "305a0f29-a5f7-5cfd-8c47-37c113db124b",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "b4d159ec-dade-55c6-994f-6ac077d514d8",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "8f240615-c464-518e-b71b-abb6ad32b9de",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "a7bd0a4a-9241-56e3-8276-c7f1513bb650",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "82f5011d-1e3c-5b68-8645-66cb4b213f11",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%No74"
+        },
+        {
+          "id": "b1f4fd06-548e-581e-bf4c-ee42a610f977",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f6629f7c-d1ef-53c0-acba-2da29980b235",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "3fa845d8-4ef5-51e8-8f8a-24fbcc62dfba",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "99682ee4-6e8f-55e7-9516-9e9014e55ce5",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "478c4f00-9f6f-5c92-b13c-88edf3474ad2",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha Moderada"
+        },
+        {
+          "id": "0d46fc18-5284-5643-be6d-0a7825f3c5c1",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "4e50f298-17dc-58c8-a650-3242c92ede13",
+      "name": "cadastro-usuario-ct27-1",
+      "commands": [
+        {
+          "id": "9c8d975e-28b2-5ca6-83ad-389e270aa8b6",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d681bd3f-e32b-5cac-9c50-899155f7e1f3",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "4536d01c-f4ac-5e38-a9c9-7fb648ff4b01",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "Julian"
+        },
+        {
+          "id": "b8e87524-7b69-5c5f-bcb8-6df69d9dbbc7",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "44795a90-1215-523d-b2af-78b3183a6efc",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "9e5eb787-6d5c-520e-8cc0-ddde0d3a9831",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "9ab4c5eb-a68b-5963-b2a0-d210ab2d83c0",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "005a6bde-bb59-5ab4-8b7e-1a138b20c786",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "abdac62b-5fe7-573e-9338-38cea5ce3a97",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "3aca17a1-f4e0-5cb1-a431-7dadd9f18ea3",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "9fcca31d-b2a8-5538-b833-9f8c4d1f3cac",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "944e560b-a20d-5af8-88a1-75f268e2bf8f",
+      "name": "cadastro-usuario-ct28-1",
+      "commands": [
+        {
+          "id": "0c82ba5d-e2f3-54ac-a42c-dbb8162a0c2e",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "db599ed4-17c8-5f46-a037-0a0160508cd8",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "d8d5452a-2645-5c4f-8fcb-74d2c6677968",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "e675eaab-d21d-5b14-a6fa-9dc3f159bcb7",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "796e70ba-4c98-5e21-bd2d-b27287e877b1",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "b6bef6aa-ad44-5243-a269-b248c7f98e95",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "1991"
+        },
+        {
+          "id": "1a3d0331-1c0f-53bb-b969-29eb87a350b2",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "bb8cf223-fa26-5912-a011-8654526d838e",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "2524a9fc-126f-5f72-98a3-1eead12a653f",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "d822eb9c-748c-5fcf-97e3-a4b42c15ce7c",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "7ab44d71-9580-58b5-b8fe-1e58f2c7d717",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "7c1df761-9762-5602-bcbf-1692aa79fa9f",
+      "name": "cadastro-usuario-ct29-1",
+      "commands": [
+        {
+          "id": "c3f27ce0-a253-5cdd-9ffa-2217c46afad6",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a4122c1d-ec1b-57cc-91cd-c44f2409ec95",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "bad8edb7-6ae2-54c9-85d6-868361f5901d",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "cfcd202c-5075-56d7-b052-1c5a0737157a",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "d8d842c4-a2ce-5e4b-8e45-97da1bdc6cf3",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.br"
+        },
+        {
+          "id": "1a6ebdb3-53db-55eb-b52d-084b68ab89e8",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "3419a1fc-8896-50a5-9621-9bc7f36ecd56",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6b94a82d-8204-5fe7-af70-56a06043d216",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "f8f694e2-b70b-5a64-9387-fb6140741f5e",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "3ba230f5-da9c-546e-b2f6-7fd391e6a5b0",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "243fbbd0-5ea1-5cca-9d80-17ecfa0e373f",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "a7bc89ed-acbf-53de-9124-d24fc960e1ff",
+      "name": "cadastro-usuario-ct30-1",
+      "commands": [
+        {
+          "id": "03af6ad2-711b-5a6f-9c8c-4896a2b8baff",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cb49c6b6-2cf7-5861-83a7-f4757c192fea",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "7f6bd45d-ac3f-5d0f-8fce-9d930920ee5d",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "7e188c70-b9a6-5546-bd86-5d5afa0a3044",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "0f7edb3f-1c50-5df2-807a-0a80f5ba1f69",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "8ca3d942-176f-55e2-ba0e-d30e7a7045b0",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "#@49%M@r1a74"
+        },
+        {
+          "id": "5477fa4b-2cf3-5e5d-969d-0e39ad8a556c",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f8e57b4f-ce9e-5b54-9306-7d2ad2ac50e4",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "11382844-c0f7-5dc0-a159-f13971de9669",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "b167f6df-1396-5081-9e7a-4b324edec972",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "9187af87-b14a-58e6-9f65-d2b505453120",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "49e6c322-7f16-5464-8e77-b1a2fee37996",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "15103ce2-a1e3-5127-a1c8-9004e90d3e93",
+      "name": "cadastro-usuario-ct31-1",
+      "commands": [
+        {
+          "id": "98ba333d-a5a6-5e7d-89ee-3a9e5a93bdd9",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "db9238cd-d251-5c20-8ee8-0cb72e9a3444",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "350f4a9f-f6ad-5355-bfb4-6de5df173bdc",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "7c487faa-0f92-59b2-b208-880403573358",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "14ba72f3-7d36-527b-8042-f399ba02ab1d",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "jul@usp.xyz"
+        },
+        {
+          "id": "379faa0a-8148-5c7b-9e6e-61e07c3e411a",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "12345"
+        },
+        {
+          "id": "6a0fd919-a179-5b59-97fe-069df8b27dc7",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c82111df-850a-5d90-abd7-93376fe0f131",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "96058e00-7bb3-506d-ada2-3bac8546e40c",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "bad791d4-2432-5eb5-9782-80ce5de8f83a",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "464c3009-16c4-586e-93fd-8f79fd9c878c",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "8d58d8c6-f348-5480-88fc-ad77dcefd727",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    },
+    {
+      "id": "99582f6e-9cde-53fc-af35-120b2639a78c",
+      "name": "cadastro-usuario-ct32-1",
+      "commands": [
+        {
+          "id": "752c272f-fec2-5921-8252-f7dee7b1ea10",
+          "comment": "",
+          "command": "open",
+          "target": "https://linamgr.github.io/cadastro-usuario/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "933dc913-6c91-5226-80fb-53d58047f580",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [],
+          "value": "Cadastro de Usuário"
+        },
+        {
+          "id": "8946ae89-2c86-56e9-ae40-e50983a4b74f",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputName",
+          "targets": [],
+          "value": "M@r1a"
+        },
+        {
+          "id": "f805f714-097a-5a87-81bf-0bd117473da5",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputYear",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "db6ec428-f746-51af-83c1-cd6440f85ec9",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputEmail",
+          "targets": [],
+          "value": "mariausp.br"
+        },
+        {
+          "id": "e9a724b7-c7f2-5b95-ad74-7c1bd3eb7f42",
+          "comment": "",
+          "command": "type",
+          "target": "id=inputPassword",
+          "targets": [],
+          "value": "2035"
+        },
+        {
+          "id": "2aad3a42-2c51-5e88-b3eb-1446281ae66f",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "54e39d37-bdb7-52dc-8282-51bfb3917a07",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputNameHelp",
+          "targets": [],
+          "value": "Nome inválido."
+        },
+        {
+          "id": "d665c196-2fc1-56e5-8327-ff3da9b35b05",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputYearHelp",
+          "targets": [],
+          "value": "Ano inválido."
+        },
+        {
+          "id": "bd9721a4-f519-5e6a-8a61-1c9d4ed4570f",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputEmailHelp",
+          "targets": [],
+          "value": "Formato de email inválido."
+        },
+        {
+          "id": "6dca75cf-2c01-5a37-8f9f-2d3cbfc64739",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputPasswordHelp",
+          "targets": [],
+          "value": "Senha inválida."
+        },
+        {
+          "id": "2f22850c-7246-5f65-a24c-a756d55a51dd",
+          "comment": "",
+          "command": "verifyText",
+          "target": "id=inputResult",
+          "targets": [],
+          "value": "Seus dados não foram registrados"
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "171ec49a-dfd6-5206-8609-ef6e70e494d8",
+      "name": "suite-cadastro-usuario-rafaelfeltrim",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "57416f05-d584-5c7b-88bf-0c71ba67f438",
+        "12122be6-2676-566f-bc54-05ef01d42a6c",
+        "a0c1fce6-6182-5f61-a435-5f6217a7d125",
+        "c5061bc8-a7ff-5355-b795-e7a64b745b57",
+        "eabf4854-a8c5-516d-be9f-da6759fba7d9",
+        "0b0b4682-68b8-5d39-a1f9-50113dab9210",
+        "4da69350-176a-5330-8378-aab2bb000e18",
+        "3e879294-27b4-599a-be07-aed37b4af7ef",
+        "006c0d30-a2ff-5d0e-8ef3-dda5085b9be9",
+        "4c0fce1d-6924-58f1-a6d7-ec4c1271d6d0",
+        "3d4f0b82-80f5-56ee-8f57-5399902ce08e",
+        "8e31c419-9afe-5742-88e9-91f49baed6bd",
+        "48defad3-0439-551f-80fe-1c2e594829ef",
+        "ad836c6b-82bb-5797-8389-304249be8242",
+        "634c41e6-db6b-5991-9782-88f6e93a384d",
+        "ff7ecdd5-0ddf-58fe-9e9c-2565b38d57cd",
+        "bda69163-5b36-5052-9a40-ae08c4fcad58",
+        "d7b5b03a-620a-5f0a-9270-284b5bf3842a",
+        "3b1342ee-a926-5918-87f2-5ddaa2917adc",
+        "ce361b7d-8e44-5148-b751-9dd857d1e5f9",
+        "d027b4d9-51e3-5101-a152-bb56a5046146",
+        "29a2483a-cc7c-529e-93f3-5a800c99a809",
+        "94ff2d12-ef76-5404-bb8a-ae4f1e60c02a",
+        "79f69bab-b566-5e63-b2d9-4d5725d360d8",
+        "ac819f94-608a-55b8-969b-2fc8b2bd00fa",
+        "c9e9218a-d1c7-5125-9117-ff397651b783",
+        "1bea86a8-5909-5b1c-9e63-22f9cd8ac00d",
+        "e921e047-1c80-5597-b107-59e6b41ede45",
+        "bfbcd046-fbe9-58a1-bfba-7980b06cf8e5",
+        "4e50f298-17dc-58c8-a650-3242c92ede13",
+        "944e560b-a20d-5af8-88a1-75f268e2bf8f",
+        "7c1df761-9762-5602-bcbf-1692aa79fa9f",
+        "a7bc89ed-acbf-53de-9124-d24fc960e1ff",
+        "15103ce2-a1e3-5127-a1c8-9004e90d3e93",
+        "99582f6e-9cde-53fc-af35-120b2639a78c"
+      ]
+    }
+  ],
+  "urls": [
+    "https://linamgr.github.io/cadastro-usuario/"
+  ],
+  "plugins": []
+}

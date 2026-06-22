@@ -1,0 +1,15 @@
+Portfólio acadêmico publicado no GitHub Pages:
+https://rafeltrim.github.io/portfolio-academico-web-mobile/
+
+Repositório do portfólio acadêmico:
+https://github.com/RaFeltrim/portfolio-academico-web-mobile
+
+Espelho do portfólio acadêmico no Vercel:
+https://portfolio-academico-rafael-feltrim.vercel.app/
+
+Portfólio profissional complementar no GitHub Pages:
+https://rafeltrim.github.io/portfolio/
+
+Repositório do portfólio profissional:
+https://github.com/RaFeltrim/portfolio
+

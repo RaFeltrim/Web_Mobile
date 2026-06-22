@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Entendendo a Web - Um Guia para Iniciantes</title>
+</head>
+<body>
+<header>
+<h1>Entendendo a Web: Um Guia para Iniciantes</h1>
+<p>Aprenda os fundamentos que fazem a internet funcionar.</p>
+<nav>
+<h2>Sumario</h2>
+<ul>
+<li><a href="#linguagem-marcacao">O que é linguagem de marcação</a></li>
+<li><a href="#html-vs-programacao">HTML não é linguagem de programação</a></li>
+<li><a href="#origem-html">A origem do HTML</a></li>
+<li><a href="#evolucao-html">A evolução do HTML</a></li>
+<li><a href="#contribuicao-web">A contribuicao do HTML para a web atual</a></li>
+<li><a href="#como-site-carrega">Como um site e carregado</a></li>
+<li><a href="#referencias">Referências bibliograficas</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="linguagem-marcacao">
+<h2>O que é uma Linguagem de Marcação?</h2>
+<p>Uma linguagem de marcação e um sistema de anotações usado para definir a estrutura e o significado do conteúdo em um documento. Diferentemente de linguagens de programação, ela não éxecuta lógica nem toma decisões. Sua função principal e organizar informações, indicando ao computador (ou ao navegador) qual o papel de cada trecho do conteúdo: o que é titulo, o que é paragrafo, o que é imagem, o que é link.</p>
+<p>A ideia de marcar textos vem de antes da web. Na decada de 1960, a IBM desenvolveu a GML (Generalized Markup Language) para organizar documentos corporativos. Essa ideia evoluiu para a SGML (Standard Generalized Markup Language), padronizada pela ISO em 1986, que serviu como base para o HTML.</p>
+<h3>Principais linguagens de marcação usadas na web</h3>
+<ul>
+<li><strong>HTML (HyperText Markup Language)</strong> - a linguagem de marcação padrão da web, usada para estruturar páginas e conteúdo.</li>
+<li><strong>XML (eXtensible Markup Language)</strong> - usada para transportar e armazenar dados de forma estruturada entre sistemas.</li>
+<li><strong>SVG (Scalable Vector Graphics)</strong> - linguagem de marcação baseada em XML para descrever graficos vetoriais bidimensionais.</li>
+<li><strong>Markdown</strong> - linguagem de marcação leve, muito usada em documentações e arquivos README de projetos.</li>
+<li><strong>XHTML</strong> - variação mais rigorosa do HTML, que segue regras do XML.</li>
+</ul>
+</section>
+<section id="html-vs-programacao">
+<h2>A Diferença entre HTML e Linguagem de Programação</h2>
+<p>Uma dúvida muito comum entre iniciantes e achar que HTML e uma linguagem de programação. Não é. É importante entender essa distincao porque ela afeta como voce estuda e como entende o desenvolvimento web.</p>
+<h3>O que uma linguagem de programação faz</h3>
+<p>Linguagens de programação, como JavaScript, Python e Java, permitem ao desenvolvedor criar lógica computacional. Com elas e possível:</p>
+<ul>
+<li>Tomar decisões (se isso acontecer, faça aquilo)</li>
+<li>Repetir ações (faça isso 10 vezes)</li>
+<li>Armazenar e manipular dados (listas, objetos, variaveis)</li>
+<li>Responder a eventos (quando o usuário clicar, execute tal função)</li>
+</ul>
+<h3>O que o HTML faz</h3>
+<p>O HTML apenas define a estrutura do conteúdo. Ele diz ao navegador: "este texto e um titulo", "isto e um paragrafo", "aqui tem uma imagem", "este trecho e um link". Ele não calcula, não decide e não repete nada sozinho.</p>
+<p>Uma analogia simples: se voce pensa em uma casa, o HTML seria a planta baixa, mostrando onde ficam os cômodos, paredes e portas. A linguagem de programação seria o sistema elétrico e hidráulico, que faz as coisas funcionarem de verdade.</p>
+<h3>Resumo da comparação</h3>
+<table>
+<thead>
+<tr>
+<th>Caracteristica</th>
+<th>HTML</th>
+<th>Linguagem de Programação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tipo</td>
+<td>Linguagem de marcação</td>
+<td>Linguagem de programação</td>
+</tr>
+<tr>
+<td>Função</td>
+<td>Estruturar conteúdo</td>
+<td>Criar lógica e comportamento</td>
+</tr>
+<tr>
+<td>Pode tomar decisões?</td>
+<td>Não</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>Pode manipular dados?</td>
+<td>Não</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>Exemplos</td>
+<td>HTML, XML, Markdown</td>
+<td>JavaScript, Python, Java</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="origem-html">
+<h2>A Origem do HTML</h2>
+<p>O HTML foi criado em <strong>1991</strong> por <strong>Tim Berners-Lee</strong>, um físico britanico que trabalhava no CERN (Organização Europeia para Pesquisa Nuclear), na Suíça.</p>
+<p>Na epoca, Berners-Lee enfrentava um problema pratico: os pesquisadores do CERN tinham dificuldade em compartilhar documentos e dados entre diferentes computadores e sistemas. Para resolver isso, ele propos um sistema baseado em três pilares fundamentais:</p>
+<ol>
+<li><strong>HTML</strong> - a linguagem para escrever os documentos</li>
+<li><strong>HTTP</strong> - o protocolo para transmitir esses documentos entre maquinas</li>
+<li><strong>URL</strong> - o sistema de enderecos para localizar cada documento</li>
+</ol>
+<p>Juntos, esses três elementos formaram a base da World Wide Web (WWW). A primeira página web do mundo foi publicada em agosto de 1991, hospedada no computador NeXT de Berners-Lee no CERN. Ela explicava o próprio projeto da web e como participar dele.</p>
+<p>A primeira versão do HTML era extremamente simples: possuia apenas 18 tags, incluindo títulos, parágrafos, listas e, mais importante, a tag de link (anchor), que permitia conectar documentos entre si, criando a ideia de hipertexto que da nome a linguagem.</p>
+</section>
+<section id="evolucao-html">
+<h2>A Evolução do HTML</h2>
+<p>Desde sua criação em 1991, o HTML passou por diversas versões, cada uma adicionando recursos para acompanhar a evolução da web:</p>
+<ul>
+<li><strong>HTML 1.0 (1991)</strong> - a versão original criada por Tim Berners-Lee. Tinha apenas 18 tags e permitia criar documentos simples com links.</li>
+<li><strong>HTML 2.0 (1995)</strong> - primeiro padrão oficial, publicado pela IETF. Adicionou suporte a formulários, permitindo que usuarios enviassem dados.</li>
+<li><strong>HTML 3.2 (1997)</strong> - padronizado pelo W3C (World Wide Web Consortium). Introduziu tabelas, applets e melhor controle de alinhamento de texto.</li>
+<li><strong>HTML 4.01 (1999)</strong> - grande marco de maturidade. Separou mais claramente estrutura (HTML) de apresentacao (CSS), introduziu suporte a scripts e acessibilidade.</li>
+<li><strong>XHTML 1.0 (2000)</strong> - reformulacao do HTML 4 usando regras mais rigorosas do XML. Exigia que todas as tags fossem fechadas e escritas em minusculas.</li>
+<li><strong>HTML5 (2014)</strong> - versão atual e revolucionaria. Introduziu tags semânticas (header, footer, article, section, nav), áudio e vídeo nativos, canvas para graficos, APIs para geolocalizacao, armazenamento local e muito mais.</li>
+</ul>
+<p>Hoje, o HTML5 e mantido como um "padrão vivo" (Living Standard) pelo WHATWG (Web Hypertext Application Technology Working Group), o que significa que ele e atualizado continuamente, sem versões numeradas futuras.</p>
+</section>
+<section id="contribuicao-web">
+<h2>A Contribuicao do HTML para a Web Atual</h2>
+<p>O HTML é a espinha dorsal da web. Sem ele, não éxistiria uma forma padronizada de criar e exibir conteúdo nos navegadores. Suas contribuicoes fundamentais incluem:</p>
+<ul>
+<li><strong>Acessibilidade universal:</strong> por ser um padrão aberto e gratuito, qualquer pessoa pode criar uma página web sem licencas ou custos.</li>
+<li><strong>Semantica:</strong> com o HTML5, os desenvolvedores podem dar significado ao conteúdo (nav para navegação, article para artigos, aside para conteúdo lateral), o que melhora tanto a acessibilidade para leitores de tela quanto o SEO (otimização para buscadores).</li>
+<li><strong>Multimedia nativa:</strong> tags como áudio e vídeo eliminaram a necessidade de plugins como Flash, tornando o conteúdo mais seguro e leve.</li>
+<li><strong>Formulários avançados:</strong> campos como email, date, range e number facilitam a entrada de dados e a validação sem precisar de JavaScript.</li>
+<li><strong>Base para frameworks modernos:</strong> tecnologias como React, Angular e Vue geram HTML dinamicamente. Mesmo os aplicativos web mais complexos do mundo, no final das contas, produzem HTML para o navegador renderizar.</li>
+<li><strong>Interoperabilidade:</strong> uma página HTML funciona em qualquer navegador, qualquer sistema operacional e qualquer dispositivo, do smartphone ao computador.</li>
+</ul>
+</section>
+<section id="como-site-carrega">
+<h2>Como um Site e Carregado: O Fluxo Completo</h2>
+<p>Quando voce digita um endereco na barra do navegador e pressiona Enter, uma serie de etapas acontece nos bastidores. Vamos entender cada conceito envolvido:</p>
+<h3>Os conceitos-chave</h3>
+<h4>Navegador (Browser)</h4>
+<p>O navegador é o programa que voce usa para acessar a web. Exemplos: Google Chrome, Firefox, Safari, Edge. Ele tem duas funções principais: enviar pedidos (requisições) para servidores e interpretar as respostas (HTML, CSS, JavaScript, imagens) para exibir a página na tela.</p>
+<h4>Servidor Web</h4>
+<p>O servidor é um computador que fica ligado 24 horas por dia, conectado a internet, armazenando os arquivos de um site. Quando recebe um pedido de um navegador, ele localiza o arquivo solicitado e o envia de volta. Exemplos de softwares de servidor: Apache, Nginx, IIS.</p>
+<h4>URL (Uniform Resource Locator)</h4>
+<p>A URL e o endereco completo de um recurso na web. Ela tem partes bem definidas:</p>
+<ul>
+<li><strong>Protocolo:</strong> https:// (como a comunicação vai acontecer)</li>
+<li><strong>Dominio:</strong> www.exemplo.com (nome do servidor)</li>
+<li><strong>Caminho:</strong> /página/sobre (qual recurso especifico)</li>
+</ul>
+<p>Exemplo completo: https://www.exemplo.com/noticias/artigo-1</p>
+<h4>HTTP (HyperText Transfer Protocol)</h4>
+<p>HTTP é o protocolo (conjunto de regras) que define como navegador e servidor se comunicam. O HTTPS e a versão segura, com criptografia, usada pela maioria dos sites hoje. Os métodos HTTP mais comuns são:</p>
+<ul>
+<li><strong>GET</strong> - pede um recurso (quando voce acessa uma página)</li>
+<li><strong>POST</strong> - envia dados (quando voce preenche e envia um formulario)</li>
+<li><strong>PUT</strong> - atualiza um recurso existente</li>
+<li><strong>DELETE</strong> - remove um recurso</li>
+</ul>
+<h3>O fluxo de Requisicao e Resposta passo a passo</h3>
+<ol>
+<li><strong>Voce digita a URL</strong> no navegador, por exemplo: https://www.sibisc.com.br/noticias</li>
+<li><strong>Resolucao DNS:</strong> o navegador consulta o DNS (Domain Name System), que funciona como uma lista telefonica da internet, para descobrir o endereco IP numerico do servidor (por exemplo, 203.0.113.42).</li>
+<li><strong>Conexao TCP:</strong> o navegador estabelece uma conexao com o servidor usando o protocolo TCP (Transmission Control Protocol), que garante entrega confiavel dos dados.</li>
+<li><strong>Requisicao HTTP (Request):</strong> o navegador envia uma mensagem ao servidor dizendo: "Quero o recurso /noticias, usando o metodo GET, via HTTP/2".</li>
+<li><strong>Processamento no Servidor:</strong> o servidor recebe a requisicao, localiza o recurso pedido (pode ser um arquivo HTML estatico ou uma página gerada dinamicamente por codigo do servidor), e prepara a resposta.</li>
+<li><strong>Resposta HTTP (Response):</strong> o servidor envia de volta o arquivo HTML junto com um codigo de status. Os mais comuns são:
+          <ul>
+<li><strong>200 OK</strong> - tudo certo, recurso encontrado</li>
+<li><strong>301 Moved Permanently</strong> - o recurso mudou de endereco</li>
+<li><strong>404 Not Found</strong> - recurso não éncontrado</li>
+<li><strong>500 Internal Server Error</strong> - erro no servidor</li>
+</ul>
+</li>
+<li><strong>Renderizacao:</strong> o navegador recebe o HTML e comeca a interpreta-lo. Ao encontrar referências a outros recursos (CSS, JavaScript, imagens, fontes), faz novas requisições para cada um deles.</li>
+<li><strong>Página pronta:</strong> quando todos os recursos são carregados e processados, o navegador exibe a página final na sua tela.</li>
+</ol>
+<h3>Resumo visual do fluxo</h3>
+<pre>
+  [Voce]
+    |
+    | 1. Digita URL
+    v
+  [Navegador]
+    |
+    | 2. Consulta DNS (descobre IP do servidor)
+    | 3. Abre conexao TCP
+    | 4. Envia Requisicao HTTP GET
+    v
+  [Servidor Web]
+    |
+    | 5. Processa a requisicao
+    | 6. Envia Resposta HTTP (HTML + Status 200)
+    v
+  [Navegador]
+    |
+    | 7. Interpreta HTML, pede CSS/JS/imagens
+    | 8. Renderiza a página
+    v
+  [Página exibida na tela]
+      </pre>
+</section>
+<section id="referencias">
+<h2>Referências Bibliograficas</h2>
+<ul>
+<li>MDN Web Docs. <strong>HTML: HyperText Markup Language.</strong> Mozilla Foundation. Disponivel em: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTML</a></li>
+<li>W3Schools. <strong>HTML Tutorial.</strong> Disponivel em: <a href="https://www.w3schools.com/html/" target="_blank">https://www.w3schools.com/html/</a></li>
+<li>MDN Web Docs. <strong>Como a Web funciona.</strong> Mozilla Foundation. Disponivel em: <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/How_the_Web_works" target="_blank">https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/How_the_Web_works</a></li>
+<li>W3C. <strong>A Little History of the World Wide Web.</strong> World Wide Web Consortium. Disponivel em: <a href="https://www.w3.org/History.html" target="_blank">https://www.w3.org/History.html</a></li>
+<li>Berners-Lee, Tim. <strong>Information Management: A Proposal.</strong> CERN, 1989. Disponivel em: <a href="https://www.w3.org/History/1989/proposal.html" target="_blank">https://www.w3.org/History/1989/proposal.html</a></li>
+<li>WHATWG. <strong>HTML Living Standard.</strong> Disponivel em: <a href="https://html.spec.whatwg.org/" target="_blank">https://html.spec.whatwg.org/</a></li>
+<li>MDN Web Docs. <strong>HTTP Overview.</strong> Mozilla Foundation. Disponivel em: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview</a></li>
+<li>W3Schools. <strong>HTTP Methods.</strong> Disponivel em: <a href="https://www.w3schools.com/tags/ref_httpmethods.asp" target="_blank">https://www.w3schools.com/tags/ref_httpmethods.asp</a></li>
+</ul>
+</section>
+</main>
+<footer>
+<p>Projeto desenvolvido por Rafael Feltrim para a disciplina SSC0961 - Desenvolvimento Web e Mobile (USP).</p>
+<p>2026</p>
+</footer>
+</body>
+</html>
